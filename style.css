@@ -1,0 +1,223 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    width:auto;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background-color:rgb(52, 35, 148);
+    height: 23vh;
+    color: white;
+}
+
+
+.head {
+    height:90px;
+}
+
+.container {
+
+    display:flex;
+    flex-wrap:wrap;
+    width:90%;
+    max-width:1400px;
+    margin:70px auto 0;
+    justify-content:center;
+
+
+}
+
+.item{
+
+    flex-shrink:0;
+    margin:5px;
+
+}
+
+.legume {
+
+    text-align:center;
+    font-size:50px;
+
+}
+
+.button {
+
+    text-align:center;
+    width:250px;
+    font-size-adjust:0.45;
+    position: fixed;
+    font-family: 'Lato';
+    font-size: 50px;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-property: display;
+    transition-property: visibility;
+    transition-duration: 0.000000001s;
+    animation-fill-mode: forwards;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    top:85%;
+    right: 50px;
+    font-size:2.5rem;
+    border: solid blue 5px;
+    margin:10px;
+    justify-content:right;
+    color:rgb(52, 35, 148);
+    padding:10px;
+}
+
+
+.image {
+
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+
+.image:hover {
+border : 5px solid rgb(244, 244, 255);
+box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+transform: scale(1.2);
+}
+
+
+
+@media (min-width: 300px) {
+
+body {
+
+    background-color: #f9ea8f;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    box-sizing:border-box;
+}
+
+.container {
+
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.image {
+
+    border-radius:50%;
+    border:solid 1px;
+
+}
+
+.legume{
+
+    text-align:center;
+    font-size:12px;
+    box-sizing:border-box;
+
+}
+
+.image {
+
+    margin: 5px;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+.button  {
+
+    position:fixed;
+    width:70%;
+    top:72%;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    box-sizing:border-box;
+
+}
+
+
+header  {
+
+    width:auto;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background-color:rgb(52, 35, 148);
+    height: 20vh;
+    color: white;
+}
+
+.legume  {
+    text-align:center;
+    font-size:9px;
+    box-sizing:border-box;
+}
+
+.container{
+
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+}
+
+.image {
+
+    flex-basis:90%;
+    width:50px;
+    height:50px;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.image:hover {
+
+    border : 5px solid rgb(244, 244, 255);
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    transform: scale(1.2);
+
+}
+
+@media only screen and (min-width: 960px) {
+.image {
+flex-basis: 33.333%;
+}
+}
+
+@media only screen and (min-width: 1280px) {
+.image {
+flex-basis: 25%;
+}
+}
+
+@media only screen and (min-width: 1600px) {
+.image {
+flex-basis: 20%;
+}
+}
